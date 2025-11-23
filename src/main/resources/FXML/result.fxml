@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="40.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ResultController" stylesheets="@../styles/styles.css" styleClass="root">
+    <padding>
+        <Insets bottom="60.0" left="60.0" right="60.0" top="60.0"/>
+    </padding>
+    
+    <Label text="Game Result" styleClass="title">
+        <font>
+            <Font name="System Bold" size="32.0"/>
+        </font>
+    </Label>
+    
+    <Label fx:id="resultLabel" text="Result" styleClass="result-title">
+        <font>
+            <Font name="System Bold" size="48.0"/>
+        </font>
+    </Label>
+    
+    <VBox spacing="15.0" alignment="CENTER">
+        <Label fx:id="winningsLabel" text="Winnings" styleClass="subtitle">
+            <font>
+                <Font name="System Bold" size="24.0"/>
+            </font>
+        </Label>
+        
+        <Label fx:id="totalWinningsLabel" text="Total: $0" styleClass="subtitle">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+        </Label>
+    </VBox>
+    
+    <HBox spacing="30.0" alignment="CENTER">
+        <VBox.margin>
+            <Insets top="30.0"/>
+        </VBox.margin>
+        
+        <Button fx:id="playAgainButton" text="Play Again" onAction="#handlePlayAgain" styleClass="primary-button">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        
+        <Button fx:id="exitButton" text="Exit Game" onAction="#handleExit" styleClass="danger-button">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+    </HBox>
+</VBox>
