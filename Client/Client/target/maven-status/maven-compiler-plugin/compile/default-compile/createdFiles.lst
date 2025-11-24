@@ -1,0 +1,7 @@
+shared\Card.class
+shared\PokerInfo.class
+controllers\GameplayController.class
+controllers\WelcomeController.class
+shared\Client.class
+shared\ClientApp.class
+controllers\ResultController.class
