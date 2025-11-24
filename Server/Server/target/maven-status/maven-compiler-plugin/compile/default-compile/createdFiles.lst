@@ -1,0 +1,12 @@
+shared\ThreeCardLogic.class
+shared\GameCalculator$GameResult.class
+shared\PokerInfo.class
+shared\Card.class
+controllers\ServerGameController.class
+shared\Deck.class
+shared\Server$ClientThread.class
+shared\Server$TheServer.class
+shared\Server.class
+controllers\ServerIntroController.class
+shared\GameCalculator.class
+shared\ServerApp.class
